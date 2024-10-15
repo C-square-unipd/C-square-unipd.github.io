@@ -3,12 +3,39 @@ project:
 
 website:
   title: "C square Laboratory"
+  description: "The website of the C square Laboratory at the Department of Management and Engineering of the University of Padua"
+  image: images/CsquareLabLogo.png
+  search:
+    location: navbar
+    type: overlay
+  back-to-top-navigation: true
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    right:
+      - text: "Home"
+        href: index.qmd
+    #   - text: "People"
+    #    href: people.qmd
+    #  - text: "Publications"
+    #    href: publications.qmd
+    #  - text: "Research"
+    #    href: research.qmd
+    #  - text: "Contacts"
+    #    href: contacts.qmd
+    #  - text: "Projects"
+    #    href: projects.qmd
+    #  - text: "Opportunities"
+    #    href: opportunities.qmd
       - about.qmd
 
+  page-footer: 
+    left: |
+      © C-square lab, 2024<br>
+      Opinions are our own and do not represent our employer
+    right: |
+      Made with <i class='bi bi-heart-fill'></i>, python <i class="fa-brands fa-python"></i>,
+      and <a href='https://quarto.org/' target='_blank'><img src='https://quarto.org/favicon.png' width=12> quarto</a><br>
+      [Source at <i class='bi bi-github'></i> GitHub](https://github.com/C-square-unipd/C-square-unipd.github.io.git)
+ 
 format:
   html:
     theme: cosmo
